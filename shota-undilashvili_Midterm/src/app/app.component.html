@@ -1,0 +1,11 @@
+<!-- TASK 1 -->
+<div class="container">
+  <div *ngFor="let user of users">
+    <h1 *ngIf="user.age>20"> {{user.firstname}}; {{user.lastname}}; {{user.age}}</h1>
+  </div>
+</div>
+
+<!-- TASK 2 -->
+<div class="container-2">
+  <app-user [users]="parentUsers"></app-user>
+</div>
